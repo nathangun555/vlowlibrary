@@ -15,11 +15,27 @@
 		7CE67AE12F11566E0003099C /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 7CE67AE02F11566E0003099C /* Supabase */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7C3823262F12E771006B1DD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CE67A9F2F114D7E0003099C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CE67AA62F114D7E0003099C;
+			remoteInfo = VlowLibrary;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		7C3823222F12E771006B1DD1 /* VlowLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VlowLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CE67AA72F114D7E0003099C /* VlowLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VlowLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		7C3823232F12E771006B1DD1 /* VlowLibraryTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = VlowLibraryTests;
+			sourceTree = "<group>";
+		};
 		7CE67AA92F114D7E0003099C /* VlowLibrary */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = VlowLibrary;
@@ -28,6 +44,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7C38231F2F12E771006B1DD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7CE67AA42F114D7E0003099C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -48,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				7CE67AA92F114D7E0003099C /* VlowLibrary */,
+				7C3823232F12E771006B1DD1 /* VlowLibraryTests */,
 				7CE67ADF2F11566E0003099C /* Frameworks */,
 				7CE67AA82F114D7E0003099C /* Products */,
 			);
@@ -57,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				7CE67AA72F114D7E0003099C /* VlowLibrary.app */,
+				7C3823222F12E771006B1DD1 /* VlowLibraryTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +96,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7C3823212F12E771006B1DD1 /* VlowLibraryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C3823282F12E771006B1DD1 /* Build configuration list for PBXNativeTarget "VlowLibraryTests" */;
+			buildPhases = (
+				7C38231E2F12E771006B1DD1 /* Sources */,
+				7C38231F2F12E771006B1DD1 /* Frameworks */,
+				7C3823202F12E771006B1DD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C3823272F12E771006B1DD1 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				7C3823232F12E771006B1DD1 /* VlowLibraryTests */,
+			);
+			name = VlowLibraryTests;
+			packageProductDependencies = (
+			);
+			productName = VlowLibraryTests;
+			productReference = 7C3823222F12E771006B1DD1 /* VlowLibraryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		7CE67AA62F114D7E0003099C /* VlowLibrary */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CE67AB22F114D800003099C /* Build configuration list for PBXNativeTarget "VlowLibrary" */;
@@ -109,6 +157,10 @@
 				LastSwiftUpdateCheck = 2600;
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
+					7C3823212F12E771006B1DD1 = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = 7CE67AA62F114D7E0003099C;
+					};
 					7CE67AA62F114D7E0003099C = {
 						CreatedOnToolsVersion = 26.0.1;
 					};
@@ -132,11 +184,19 @@
 			projectRoot = "";
 			targets = (
 				7CE67AA62F114D7E0003099C /* VlowLibrary */,
+				7C3823212F12E771006B1DD1 /* VlowLibraryTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7C3823202F12E771006B1DD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7CE67AA52F114D7E0003099C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -147,6 +207,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7C38231E2F12E771006B1DD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7CE67AA32F114D7E0003099C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -156,7 +223,62 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		7C3823272F12E771006B1DD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CE67AA62F114D7E0003099C /* VlowLibrary */;
+			targetProxy = 7C3823262F12E771006B1DD1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		7C3823292F12E771006B1DD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SJRQY5X68S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VlowLibrary.VlowLibraryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VlowLibrary.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VlowLibrary";
+			};
+			name = Debug;
+		};
+		7C38232A2F12E771006B1DD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SJRQY5X68S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VlowLibrary.VlowLibraryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VlowLibrary.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VlowLibrary";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		7CE67AB02F114D800003099C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -364,6 +486,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7C3823282F12E771006B1DD1 /* Build configuration list for PBXNativeTarget "VlowLibraryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C3823292F12E771006B1DD1 /* Debug */,
+				7C38232A2F12E771006B1DD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7CE67AA22F114D7E0003099C /* Build configuration list for PBXProject "VlowLibrary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

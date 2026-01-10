@@ -5,7 +5,6 @@
 //  Created by Nathan Gunawan on 09/01/26.
 ////
 
-
 import SwiftUI
 
 struct LoginView: View {
@@ -34,7 +33,7 @@ struct LoginView: View {
                 Task {
                     await viewModel.signIn()
                     if let user = viewModel.signedInUser {
-                        auth.login(user: user)   // ✅ trigger RootContentView
+                        auth.login(user: user)
                     }
                 }
             }

@@ -109,10 +109,6 @@ struct LoanRowView: View {
     }
 }
 
-
-
-
-// Preview: Make public or use wrapper
 #Preview("Staff Loans") {
     LoansTabView(role: .staff)
         .environmentObject(LoansViewModel(role: .staff))

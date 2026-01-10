@@ -1,8 +1,6 @@
 import SwiftUI
 import Supabase
 
-
-
 struct CatalogTabView: View {
     @EnvironmentObject var viewModel: CatalogViewModel
 

@@ -14,8 +14,8 @@ struct Loan: Codable, Identifiable {
     let user_id: UUID
     let staff_id: UUID?
     let book_id: UUID
-    let loan_date: String  // "2026-01-09"
-    let due_date: String   // "2026-01-16"
+    let loan_date: String  
+    let due_date: String
     let returned: Bool
     let return_date: String?
     let notes: String?
@@ -51,7 +51,7 @@ struct LoanWithBook: Codable, Identifiable {
     let borrower: User?
     let staff: User?
     
-    let books: Book?  // Embedded
+    let books: Book?
     
     
     var borrowerName: String {
@@ -65,8 +65,6 @@ struct LoanWithBook: Codable, Identifiable {
 }
 
 
-
-// MARK: - Date Extension (Add to separate file or here)
 extension String {
     func toDate() -> Date? {
         let formatter = DateFormatter()
@@ -74,3 +72,6 @@ extension String {
         return formatter.date(from: self)
     }
 }
+
+
+

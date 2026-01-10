@@ -28,7 +28,7 @@ class LoansViewModel: ObservableObject {
         errorMessage = nil
         
         do {
-            activeLoans = try await client.getActiveLoans(role: role, currentUserId: currentUserId) as! [LoanWithBook]
+            activeLoans = try await client.getActiveLoans(role: role, currentUserId: currentUserId) 
         } catch {
             errorMessage = "Gagal load pinjaman: \(error.localizedDescription)"
         }
@@ -43,7 +43,7 @@ class LoansViewModel: ObservableObject {
         do {
             try await client.returnLoan(loanId: loanId)
             successMessage = "Buku berhasil dikembalikan!"
-            await loadActiveLoans()  // Refresh list
+            await loadActiveLoans() 
         } catch {
             errorMessage = "Gagal return: \(error.localizedDescription)"
         }

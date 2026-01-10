@@ -51,12 +51,6 @@ struct BorrowTabView: View {
                     )
                     .datePickerStyle(.compact)  // atau .graphical untuk wheel
                 }
-                
-                Section("Catatan") {
-                    TextField("Opsional", text: $viewModel.notes, axis: .vertical)
-                        .lineLimit(2...5)
-                }
-                
                 Section {
                     Button("Buat Pinjaman") {
                         Task { await viewModel.createLoan() }
