@@ -21,6 +21,7 @@
 
 1. LOGIN
 
+<img width="348" height="737" alt="Screenshot 2026-01-14 at 22 04 14" src="https://github.com/user-attachments/assets/11869633-0957-4b64-81cc-5f1b63b3eaf8" />
 
 File:
 - LoginView.swift
@@ -55,6 +56,8 @@ Tabs:
 📚 CATALOG (STAFF)
 ----------------------------------
 
+<img width="331" height="741" alt="Screenshot 2026-01-14 at 22 06 08" src="https://github.com/user-attachments/assets/10deff83-e06d-4a56-bdef-fd3b9931f94e" />
+
 File:
 - CatalogTabView.swift
 
@@ -65,6 +68,9 @@ Features:
 ----------------------------------
 ➕ BORROW
 ----------------------------------
+
+<img width="327" height="742" alt="Screenshot 2026-01-14 at 22 06 18" src="https://github.com/user-attachments/assets/9748039c-c379-4ae2-ad46-c46691850a00" />
+
 
 File:
 - BorrowTabView.swift
@@ -84,6 +90,9 @@ Result:
 ----------------------------------
 📋 LOANS
 ----------------------------------
+
+<img width="331" height="748" alt="Screenshot 2026-01-14 at 22 06 27" src="https://github.com/user-attachments/assets/3c4727aa-0ca5-4ea9-82dc-fae4ff13616f" />
+
 
 File:
 - LoansTabView.swift
@@ -106,6 +115,8 @@ Tabs:
 📚 CATALOG (MEMBER)
 ----------------------------------
 
+<img width="331" height="749" alt="Screenshot 2026-01-14 at 22 06 42" src="https://github.com/user-attachments/assets/b5085e47-4ff5-4af9-92fa-e905f30082b4" />
+
 Features:
 - Sama seperti Staff Catalog
 - Read-only
@@ -114,6 +125,9 @@ Features:
 ----------------------------------
 📋 MY LOANS
 ----------------------------------
+
+<img width="334" height="744" alt="Screenshot 2026-01-14 at 22 06 50" src="https://github.com/user-attachments/assets/b043f20c-1d0d-4eb7-b250-de4b2ce4d42e" />
+
 
 Logic:
 - WHERE user_id = currentUser.id
@@ -150,5 +164,5 @@ Assessment Complete — January 11, 2026
 
 ================================================================================
 
-## 🔗 DATABASE & SUPPORTING FILES
+## 🔗 DATABASE & UNIT TESTING DOCUMENTATION
 https://drive.google.com/drive/folders/1ERF8MyqQQYakUR64mDp-OVJ61I6aFc-Y?usp=share_link
