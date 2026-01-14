@@ -29,18 +29,16 @@ struct CatalogTabView: View {
                 }
             }
         }
-        // 🔍 SEARCH BAR → HARUS DI SINI
-        .searchable(
-            text: $viewModel.searchText,
-            prompt: "Cari judul, author, kategori"
-        )
+//        .searchable(
+//            text: $viewModel.searchText,
+//            prompt: "Cari judul, author, kategori"
+//        )
         .onChange(of: viewModel.searchText) { _, newValue in
             Task { await viewModel.loadBooks(search: newValue) }
         }
         .onAppear {
             Task { await viewModel.loadBooks() }
         }
-        // 🚪 LOGOUT BUTTON → HARUS DI SINI
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {

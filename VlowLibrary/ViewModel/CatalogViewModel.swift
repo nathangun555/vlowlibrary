@@ -25,7 +25,7 @@ class CatalogViewModel: ObservableObject {
         errorMessage = nil
         
         do {
-            let loadedBooks = try await client.getAvailableBooks(search: search ?? searchText)
+            let loadedBooks = try await client.getAllBooks(search: search ?? searchText)
             books = loadedBooks
             filteredBooks = loadedBooks
         } catch {

@@ -62,6 +62,7 @@ struct LoanWithBook: Codable, Identifiable {
     var loanDate: Date { loan_date.toDate() ?? Date() }
     var dueDate: Date { due_date.toDate() ?? Date() }
     var isOverdue: Bool { dueDate < Date() && !returned }
+    
 }
 
 

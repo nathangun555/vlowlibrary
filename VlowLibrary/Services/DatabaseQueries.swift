@@ -15,6 +15,16 @@ extension SupabaseClient {
         try await self
             .from("books")
             .select("id, title, author, isbn, category, available_copies")
+            .eq("available_copies", value: true)
+            .order("title")
+            .execute()
+            .value
+    }
+    
+    func getAllBooks(search: String? = nil) async throws -> [Book] {
+        try await self
+            .from("books")
+            .select("id, title, author, isbn, category, available_copies")
             .order("title")
             .execute()
             .value
@@ -53,7 +63,7 @@ extension SupabaseClient {
         }
         
         return try await query
-            .order("loan_date", ascending: false)
+            .order("due_date", ascending: true)
             .execute()
             .value
     }
@@ -69,7 +79,7 @@ extension SupabaseClient {
         notes: String? = nil
     ) async throws -> Loan {
 
-        let loanDate = Date()
+        
         let dueDate = Calendar.current.date(byAdding: .day, value: 7, to: loanDate)!
 
         let payload = CreateLoanPayload(

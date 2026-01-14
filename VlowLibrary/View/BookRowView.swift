@@ -12,7 +12,6 @@ struct BookRowView: View {
     
     var body: some View {
         HStack(spacing: 16) {
-            // Info kiri (no image)
             VStack(alignment: .leading, spacing: 4) {
                 Text(book.title)
                     .font(.headline)
