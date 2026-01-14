@@ -31,7 +31,7 @@ struct VlowLibraryTests {
         #expect(components.day == 14)
     }
 //    
-//    // TC-05: testSignIn_EmptyUsername_SetsError
+//    // TC-02: testSignIn_EmptyUsername_SetsError
     @Test("Empty username shows error message")
     func signIn_emptyUsername_setsError() async {
         let vm = LoginViewModel()
@@ -43,7 +43,7 @@ struct VlowLibraryTests {
         #expect(vm.signedInUser == nil)
     }
 //    
-//    // TC-07: testSignIn_ValidUsername_ClearsError
+//    // TC-03: testSignIn_ValidUsername_ClearsError
     @Test("Valid username clears previous error")
     func signIn_validUsername_clearsError() async {
         let vm = LoginViewModel()
@@ -56,7 +56,7 @@ struct VlowLibraryTests {
         #expect(vm.errorMessage != "Previous error")
     }
 //    
-//    // TC-08: testCreateLoan_NoUserSelected_ShowsError
+//    // TC-04: testCreateLoan_NoUserSelected_ShowsError
     @Test("Creating loan without user shows error")
     func createLoan_noUserSelected_showsError() async {
         let vm = BorrowViewModel()
@@ -68,7 +68,7 @@ struct VlowLibraryTests {
         #expect(vm.errorMessage == "Pilih user & buku dulu")
     }
 //    
-//    // TC-12: testBookTitle_WithValidTitle_ReturnsTitle
+//    // TC-05: testBookTitle_WithValidTitle_ReturnsTitle
     @Test("Book title returns actual value when available")
     func bookTitle_withValidTitle_returnsTitle() {
         let loan = Loan(
